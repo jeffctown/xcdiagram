@@ -1,0 +1,964 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1D1584F8B61394DB3966675 /* Pods_Eorzea_Timers_Eorzea_TimersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E62744312450072831AC256 /* Pods_Eorzea_Timers_Eorzea_TimersUITests.framework */; };
+		E200CE0A2751F3BB0038ADFE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E200CE092751F3BB0038ADFE /* GoogleService-Info.plist */; };
+		E21B9DD32736054C005A212D /* NodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21B9DD22736054C005A212D /* NodeTableViewCell.swift */; };
+		E22263DA27A9E38B0047BE0B /* Pods_Eorzea_Timers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1974D75A7CA579AC6FB8AF10 /* Pods_Eorzea_Timers.framework */; };
+		E22263E427AA4F130047BE0B /* NodeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22263E327AA4F130047BE0B /* NodeDetailView.swift */; };
+		E22415BC27BF5F47008093C7 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22415BB27BF5F47008093C7 /* SpinnerViewController.swift */; };
+		E22415BE27BF7A2D008093C7 /* StorageDownloadTask+withTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22415BD27BF7A2D008093C7 /* StorageDownloadTask+withTimeout.swift */; };
+		E22BF30827B104FE0046BEF6 /* GatheringWithTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BF30727B104FE0046BEF6 /* GatheringWithTimeView.swift */; };
+		E22BF30A27B10D8E0046BEF6 /* FishingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BF30927B10D8E0046BEF6 /* FishingView.swift */; };
+		E22BF30C27B1165E0046BEF6 /* FishingWIthTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22BF30B27B1165E0046BEF6 /* FishingWIthTimeView.swift */; };
+		E231CBC22717996600F41810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231CBC12717996600F41810 /* AppDelegate.swift */; };
+		E231CBC42717996600F41810 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231CBC32717996600F41810 /* SceneDelegate.swift */; };
+		E231CBCE2717996700F41810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E231CBCD2717996700F41810 /* Assets.xcassets */; };
+		E231CBD12717996700F41810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E231CBCF2717996700F41810 /* LaunchScreen.storyboard */; };
+		E231CBDC2717996800F41810 /* Eorzea_TimersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231CBDB2717996800F41810 /* Eorzea_TimersTests.swift */; };
+		E231CBE62717996800F41810 /* Eorzea_TimersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231CBE52717996800F41810 /* Eorzea_TimersUITests.swift */; };
+		E231CBE82717996800F41810 /* Eorzea_TimersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231CBE72717996800F41810 /* Eorzea_TimersUITestsLaunchTests.swift */; };
+		E231CBFC271F46F300F41810 /* SelectCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231CBFB271F46F300F41810 /* SelectCategoryViewController.swift */; };
+		E231CBFE271F4F3100F41810 /* UIButton+convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231CBFD271F4F3100F41810 /* UIButton+convenience.swift */; };
+		E231CC00271F655100F41810 /* botany.json in Resources */ = {isa = PBXBuildFile; fileRef = E231CBFF271F655100F41810 /* botany.json */; };
+		E231CC02271F662100F41810 /* gatheringNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231CC01271F662100F41810 /* gatheringNode.swift */; };
+		E231CC04271F6E3900F41810 /* GatheringNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231CC03271F6E3900F41810 /* GatheringNodeController.swift */; };
+		E231CC062720580500F41810 /* NodeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231CC052720580500F41810 /* NodeSelectionViewController.swift */; };
+		E231CC0827208D1400F41810 /* mining.json in Resources */ = {isa = PBXBuildFile; fileRef = E231CC0727208D1400F41810 /* mining.json */; };
+		E231CC0A27208D2200F41810 /* fishing.json in Resources */ = {isa = PBXBuildFile; fileRef = E231CC0927208D2200F41810 /* fishing.json */; };
+		E231CC0C2721BAB300F41810 /* FishingNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231CC0B2721BAB300F41810 /* FishingNode.swift */; };
+		E231CC0E2721BB5900F41810 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231CC0D2721BB5900F41810 /* Node.swift */; };
+		E231CC102726F52600F41810 /* TimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E231CC0F2726F52600F41810 /* TimeController.swift */; };
+		E291976C27BC5E0E0032F7C7 /* LocalCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291976B27BC5E0E0032F7C7 /* LocalCache.swift */; };
+		E2C3977427A3B0EE00C9B416 /* UILabel+convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3977327A3B0EE00C9B416 /* UILabel+convenience.swift */; };
+		E2C3978127A40C5C00C9B416 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2C3978327A40C5C00C9B416 /* Localizable.strings */; };
+		E2C96E2827BD7CAB0071A71E /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C96E2727BD7CAB0071A71E /* NetworkController.swift */; };
+		E2E2C0D427ADC1A900A611D2 /* GatheringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E2C0D327ADC1A900A611D2 /* GatheringView.swift */; };
+		E2FC90DB273E5F9A00226F28 /* NodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FC90DA273E5F9A00226F28 /* NodeDetailViewController.swift */; };
+		FE6DDF53A7FCC55C863213E6 /* Pods_Eorzea_TimersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE76CD081F73AE220CD96C0 /* Pods_Eorzea_TimersTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E231CBD82717996800F41810 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E231CBB62717996600F41810 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E231CBBD2717996600F41810;
+			remoteInfo = "Eorzea Timers";
+		};
+		E231CBE22717996800F41810 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E231CBB62717996600F41810 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E231CBBD2717996600F41810;
+			remoteInfo = "Eorzea Timers";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CDCAF786C152C8273AC7688 /* Pods-Eorzea TimersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eorzea TimersTests.debug.xcconfig"; path = "Target Support Files/Pods-Eorzea TimersTests/Pods-Eorzea TimersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		16970730A5EE95BCBB87AF9C /* Pods-Eorzea Timers-Eorzea TimersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eorzea Timers-Eorzea TimersUITests.release.xcconfig"; path = "Target Support Files/Pods-Eorzea Timers-Eorzea TimersUITests/Pods-Eorzea Timers-Eorzea TimersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1974D75A7CA579AC6FB8AF10 /* Pods_Eorzea_Timers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eorzea_Timers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8987ACA1917D3A43D57760 /* Pods-Eorzea Timers-Eorzea TimersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eorzea Timers-Eorzea TimersUITests.debug.xcconfig"; path = "Target Support Files/Pods-Eorzea Timers-Eorzea TimersUITests/Pods-Eorzea Timers-Eorzea TimersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E62744312450072831AC256 /* Pods_Eorzea_Timers_Eorzea_TimersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eorzea_Timers_Eorzea_TimersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AE76CD081F73AE220CD96C0 /* Pods_Eorzea_TimersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eorzea_TimersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2CBBBC0F82E34A860C1F7DD /* Pods-Eorzea Timers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eorzea Timers.release.xcconfig"; path = "Target Support Files/Pods-Eorzea Timers/Pods-Eorzea Timers.release.xcconfig"; sourceTree = "<group>"; };
+		D8A2BE7167B16FFACD4DD078 /* Pods-Eorzea Timers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eorzea Timers.debug.xcconfig"; path = "Target Support Files/Pods-Eorzea Timers/Pods-Eorzea Timers.debug.xcconfig"; sourceTree = "<group>"; };
+		E200CE092751F3BB0038ADFE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E21B9DD22736054C005A212D /* NodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTableViewCell.swift; sourceTree = "<group>"; };
+		E22263E327AA4F130047BE0B /* NodeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeDetailView.swift; sourceTree = "<group>"; };
+		E22415BB27BF5F47008093C7 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		E22415BD27BF7A2D008093C7 /* StorageDownloadTask+withTimeout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageDownloadTask+withTimeout.swift"; sourceTree = "<group>"; };
+		E22BF30727B104FE0046BEF6 /* GatheringWithTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatheringWithTimeView.swift; sourceTree = "<group>"; };
+		E22BF30927B10D8E0046BEF6 /* FishingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingView.swift; sourceTree = "<group>"; };
+		E22BF30B27B1165E0046BEF6 /* FishingWIthTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingWIthTimeView.swift; sourceTree = "<group>"; };
+		E231CBBE2717996600F41810 /* Eorzea Timers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eorzea Timers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E231CBC12717996600F41810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E231CBC32717996600F41810 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E231CBCD2717996700F41810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E231CBD02717996700F41810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E231CBD22717996700F41810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E231CBD72717996800F41810 /* Eorzea TimersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eorzea TimersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E231CBDB2717996800F41810 /* Eorzea_TimersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eorzea_TimersTests.swift; sourceTree = "<group>"; };
+		E231CBE12717996800F41810 /* Eorzea TimersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eorzea TimersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E231CBE52717996800F41810 /* Eorzea_TimersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eorzea_TimersUITests.swift; sourceTree = "<group>"; };
+		E231CBE72717996800F41810 /* Eorzea_TimersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eorzea_TimersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E231CBFB271F46F300F41810 /* SelectCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryViewController.swift; sourceTree = "<group>"; };
+		E231CBFD271F4F3100F41810 /* UIButton+convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+convenience.swift"; sourceTree = "<group>"; };
+		E231CBFF271F655100F41810 /* botany.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = botany.json; sourceTree = "<group>"; };
+		E231CC01271F662100F41810 /* gatheringNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gatheringNode.swift; sourceTree = "<group>"; };
+		E231CC03271F6E3900F41810 /* GatheringNodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatheringNodeController.swift; sourceTree = "<group>"; };
+		E231CC052720580500F41810 /* NodeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeSelectionViewController.swift; sourceTree = "<group>"; };
+		E231CC0727208D1400F41810 /* mining.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mining.json; sourceTree = "<group>"; };
+		E231CC0927208D2200F41810 /* fishing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fishing.json; sourceTree = "<group>"; };
+		E231CC0B2721BAB300F41810 /* FishingNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishingNode.swift; sourceTree = "<group>"; };
+		E231CC0D2721BB5900F41810 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		E231CC0F2726F52600F41810 /* TimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeController.swift; sourceTree = "<group>"; };
+		E291976B27BC5E0E0032F7C7 /* LocalCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCache.swift; sourceTree = "<group>"; };
+		E2C3977327A3B0EE00C9B416 /* UILabel+convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+convenience.swift"; sourceTree = "<group>"; };
+		E2C3978227A40C5C00C9B416 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E2C3978427A40C7000C9B416 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E2C3978527A40C7000C9B416 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E2C96E2727BD7CAB0071A71E /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		E2E2C0D327ADC1A900A611D2 /* GatheringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatheringView.swift; sourceTree = "<group>"; };
+		E2FC90DA273E5F9A00226F28 /* NodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeDetailViewController.swift; sourceTree = "<group>"; };
+		EF6D46FA36C6FD10B9B8E113 /* Pods-Eorzea TimersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eorzea TimersTests.release.xcconfig"; path = "Target Support Files/Pods-Eorzea TimersTests/Pods-Eorzea TimersTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E231CBBB2717996600F41810 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22263DA27A9E38B0047BE0B /* Pods_Eorzea_Timers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E231CBD42717996800F41810 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6DDF53A7FCC55C863213E6 /* Pods_Eorzea_TimersTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E231CBDE2717996800F41810 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D1584F8B61394DB3966675 /* Pods_Eorzea_Timers_Eorzea_TimersUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		170BBCAFFB9AF982DDC20634 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8A2BE7167B16FFACD4DD078 /* Pods-Eorzea Timers.debug.xcconfig */,
+				B2CBBBC0F82E34A860C1F7DD /* Pods-Eorzea Timers.release.xcconfig */,
+				4A8987ACA1917D3A43D57760 /* Pods-Eorzea Timers-Eorzea TimersUITests.debug.xcconfig */,
+				16970730A5EE95BCBB87AF9C /* Pods-Eorzea Timers-Eorzea TimersUITests.release.xcconfig */,
+				0CDCAF786C152C8273AC7688 /* Pods-Eorzea TimersTests.debug.xcconfig */,
+				EF6D46FA36C6FD10B9B8E113 /* Pods-Eorzea TimersTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6E65CEEE2F8EDB10868E26A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1974D75A7CA579AC6FB8AF10 /* Pods_Eorzea_Timers.framework */,
+				7E62744312450072831AC256 /* Pods_Eorzea_Timers_Eorzea_TimersUITests.framework */,
+				8AE76CD081F73AE220CD96C0 /* Pods_Eorzea_TimersTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E22263DF27AA1A320047BE0B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E231CBFD271F4F3100F41810 /* UIButton+convenience.swift */,
+				E2C3977327A3B0EE00C9B416 /* UILabel+convenience.swift */,
+				E22415BD27BF7A2D008093C7 /* StorageDownloadTask+withTimeout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E22415B327BF5633008093C7 /* SelectCategory */ = {
+			isa = PBXGroup;
+			children = (
+				E231CBFB271F46F300F41810 /* SelectCategoryViewController.swift */,
+			);
+			path = SelectCategory;
+			sourceTree = "<group>";
+		};
+		E22415B427BF567E008093C7 /* NodeSelection */ = {
+			isa = PBXGroup;
+			children = (
+				E21B9DD22736054C005A212D /* NodeTableViewCell.swift */,
+				E231CC052720580500F41810 /* NodeSelectionViewController.swift */,
+				E22415BB27BF5F47008093C7 /* SpinnerViewController.swift */,
+			);
+			path = NodeSelection;
+			sourceTree = "<group>";
+		};
+		E22415B527BF56BC008093C7 /* NodeDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				E2FC90DA273E5F9A00226F28 /* NodeDetailViewController.swift */,
+				E2E2C0D227ADC16A00A611D2 /* NodeDetailViews */,
+			);
+			path = NodeDetailView;
+			sourceTree = "<group>";
+		};
+		E22415B627BF572C008093C7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E231CC0927208D2200F41810 /* fishing.json */,
+				E231CC0727208D1400F41810 /* mining.json */,
+				E231CBFF271F655100F41810 /* botany.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E231CBB52717996600F41810 = {
+			isa = PBXGroup;
+			children = (
+				E231CBC02717996600F41810 /* Eorzea Timers */,
+				E231CBDA2717996800F41810 /* Eorzea TimersTests */,
+				E231CBE42717996800F41810 /* Eorzea TimersUITests */,
+				E231CBBF2717996600F41810 /* Products */,
+				170BBCAFFB9AF982DDC20634 /* Pods */,
+				C6E65CEEE2F8EDB10868E26A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E231CBBF2717996600F41810 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E231CBBE2717996600F41810 /* Eorzea Timers.app */,
+				E231CBD72717996800F41810 /* Eorzea TimersTests.xctest */,
+				E231CBE12717996800F41810 /* Eorzea TimersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E231CBC02717996600F41810 /* Eorzea Timers */ = {
+			isa = PBXGroup;
+			children = (
+				E231CBF52717CF1100F41810 /* Models */,
+				E22415B327BF5633008093C7 /* SelectCategory */,
+				E22415B427BF567E008093C7 /* NodeSelection */,
+				E22415B527BF56BC008093C7 /* NodeDetailView */,
+				E231CBF72717CF2700F41810 /* Controller */,
+				E231CBF62717CF1E00F41810 /* View */,
+				E231CBF82717CF3700F41810 /* Other */,
+				E200CE092751F3BB0038ADFE /* GoogleService-Info.plist */,
+				E231CBD22717996700F41810 /* Info.plist */,
+			);
+			path = "Eorzea Timers";
+			sourceTree = "<group>";
+		};
+		E231CBDA2717996800F41810 /* Eorzea TimersTests */ = {
+			isa = PBXGroup;
+			children = (
+				E231CBDB2717996800F41810 /* Eorzea_TimersTests.swift */,
+			);
+			path = "Eorzea TimersTests";
+			sourceTree = "<group>";
+		};
+		E231CBE42717996800F41810 /* Eorzea TimersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E231CBE52717996800F41810 /* Eorzea_TimersUITests.swift */,
+				E231CBE72717996800F41810 /* Eorzea_TimersUITestsLaunchTests.swift */,
+			);
+			path = "Eorzea TimersUITests";
+			sourceTree = "<group>";
+		};
+		E231CBF52717CF1100F41810 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E231CC01271F662100F41810 /* gatheringNode.swift */,
+				E231CC0B2721BAB300F41810 /* FishingNode.swift */,
+				E231CC0D2721BB5900F41810 /* Node.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E231CBF62717CF1E00F41810 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E231CBF72717CF2700F41810 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E231CC03271F6E3900F41810 /* GatheringNodeController.swift */,
+				E231CC0F2726F52600F41810 /* TimeController.swift */,
+				E291976B27BC5E0E0032F7C7 /* LocalCache.swift */,
+				E2C96E2727BD7CAB0071A71E /* NetworkController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E231CBF82717CF3700F41810 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E22415B627BF572C008093C7 /* Data */,
+				E22263DF27AA1A320047BE0B /* Extensions */,
+				E231CBCF2717996700F41810 /* LaunchScreen.storyboard */,
+				E231CBC32717996600F41810 /* SceneDelegate.swift */,
+				E231CBC12717996600F41810 /* AppDelegate.swift */,
+				E231CBCD2717996700F41810 /* Assets.xcassets */,
+				E2C3978327A40C5C00C9B416 /* Localizable.strings */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E2E2C0D227ADC16A00A611D2 /* NodeDetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				E22263E327AA4F130047BE0B /* NodeDetailView.swift */,
+				E2E2C0D327ADC1A900A611D2 /* GatheringView.swift */,
+				E22BF30727B104FE0046BEF6 /* GatheringWithTimeView.swift */,
+				E22BF30927B10D8E0046BEF6 /* FishingView.swift */,
+				E22BF30B27B1165E0046BEF6 /* FishingWIthTimeView.swift */,
+			);
+			path = NodeDetailViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E231CBBD2717996600F41810 /* Eorzea Timers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E231CBEB2717996800F41810 /* Build configuration list for PBXNativeTarget "Eorzea Timers" */;
+			buildPhases = (
+				37674904E5B5794F69DE4765 /* [CP] Check Pods Manifest.lock */,
+				E231CBBA2717996600F41810 /* Sources */,
+				E231CBBB2717996600F41810 /* Frameworks */,
+				E231CBBC2717996600F41810 /* Resources */,
+				CADD752EBA0CDCCA58A7CA9E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Eorzea Timers";
+			packageProductDependencies = (
+			);
+			productName = "Eorzea Timers";
+			productReference = E231CBBE2717996600F41810 /* Eorzea Timers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E231CBD62717996800F41810 /* Eorzea TimersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E231CBEE2717996800F41810 /* Build configuration list for PBXNativeTarget "Eorzea TimersTests" */;
+			buildPhases = (
+				E705C1CB63D2212314B5A2D4 /* [CP] Check Pods Manifest.lock */,
+				E231CBD32717996800F41810 /* Sources */,
+				E231CBD42717996800F41810 /* Frameworks */,
+				E231CBD52717996800F41810 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E231CBD92717996800F41810 /* PBXTargetDependency */,
+			);
+			name = "Eorzea TimersTests";
+			productName = "Eorzea TimersTests";
+			productReference = E231CBD72717996800F41810 /* Eorzea TimersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E231CBE02717996800F41810 /* Eorzea TimersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E231CBF12717996800F41810 /* Build configuration list for PBXNativeTarget "Eorzea TimersUITests" */;
+			buildPhases = (
+				91094D5D14966BC62E0D7ECD /* [CP] Check Pods Manifest.lock */,
+				E231CBDD2717996800F41810 /* Sources */,
+				E231CBDE2717996800F41810 /* Frameworks */,
+				E231CBDF2717996800F41810 /* Resources */,
+				311FFFF40BAB69D8C033D992 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E231CBE32717996800F41810 /* PBXTargetDependency */,
+			);
+			name = "Eorzea TimersUITests";
+			productName = "Eorzea TimersUITests";
+			productReference = E231CBE12717996800F41810 /* Eorzea TimersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E231CBB62717996600F41810 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					E231CBBD2717996600F41810 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					E231CBD62717996800F41810 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = E231CBBD2717996600F41810;
+					};
+					E231CBE02717996800F41810 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = E231CBBD2717996600F41810;
+					};
+				};
+			};
+			buildConfigurationList = E231CBB92717996600F41810 /* Build configuration list for PBXProject "Eorzea Timers" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = E231CBB52717996600F41810;
+			packageReferences = (
+			);
+			productRefGroup = E231CBBF2717996600F41810 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E231CBBD2717996600F41810 /* Eorzea Timers */,
+				E231CBD62717996800F41810 /* Eorzea TimersTests */,
+				E231CBE02717996800F41810 /* Eorzea TimersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E231CBBC2717996600F41810 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E231CC0A27208D2200F41810 /* fishing.json in Resources */,
+				E231CC0827208D1400F41810 /* mining.json in Resources */,
+				E231CC00271F655100F41810 /* botany.json in Resources */,
+				E2C3978127A40C5C00C9B416 /* Localizable.strings in Resources */,
+				E231CBD12717996700F41810 /* LaunchScreen.storyboard in Resources */,
+				E231CBCE2717996700F41810 /* Assets.xcassets in Resources */,
+				E200CE0A2751F3BB0038ADFE /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E231CBD52717996800F41810 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E231CBDF2717996800F41810 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		311FFFF40BAB69D8C033D992 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eorzea Timers-Eorzea TimersUITests/Pods-Eorzea Timers-Eorzea TimersUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eorzea Timers-Eorzea TimersUITests/Pods-Eorzea Timers-Eorzea TimersUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Eorzea Timers-Eorzea TimersUITests/Pods-Eorzea Timers-Eorzea TimersUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37674904E5B5794F69DE4765 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eorzea Timers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91094D5D14966BC62E0D7ECD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eorzea Timers-Eorzea TimersUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CADD752EBA0CDCCA58A7CA9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eorzea Timers/Pods-Eorzea Timers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eorzea Timers/Pods-Eorzea Timers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Eorzea Timers/Pods-Eorzea Timers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E705C1CB63D2212314B5A2D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eorzea TimersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E231CBBA2717996600F41810 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E231CC0C2721BAB300F41810 /* FishingNode.swift in Sources */,
+				E22263E427AA4F130047BE0B /* NodeDetailView.swift in Sources */,
+				E22BF30827B104FE0046BEF6 /* GatheringWithTimeView.swift in Sources */,
+				E231CC102726F52600F41810 /* TimeController.swift in Sources */,
+				E2E2C0D427ADC1A900A611D2 /* GatheringView.swift in Sources */,
+				E2C96E2827BD7CAB0071A71E /* NetworkController.swift in Sources */,
+				E231CC02271F662100F41810 /* gatheringNode.swift in Sources */,
+				E231CC0E2721BB5900F41810 /* Node.swift in Sources */,
+				E22415BE27BF7A2D008093C7 /* StorageDownloadTask+withTimeout.swift in Sources */,
+				E231CBC22717996600F41810 /* AppDelegate.swift in Sources */,
+				E231CC04271F6E3900F41810 /* GatheringNodeController.swift in Sources */,
+				E22BF30A27B10D8E0046BEF6 /* FishingView.swift in Sources */,
+				E291976C27BC5E0E0032F7C7 /* LocalCache.swift in Sources */,
+				E231CC062720580500F41810 /* NodeSelectionViewController.swift in Sources */,
+				E231CBFC271F46F300F41810 /* SelectCategoryViewController.swift in Sources */,
+				E2FC90DB273E5F9A00226F28 /* NodeDetailViewController.swift in Sources */,
+				E2C3977427A3B0EE00C9B416 /* UILabel+convenience.swift in Sources */,
+				E231CBFE271F4F3100F41810 /* UIButton+convenience.swift in Sources */,
+				E231CBC42717996600F41810 /* SceneDelegate.swift in Sources */,
+				E22BF30C27B1165E0046BEF6 /* FishingWIthTimeView.swift in Sources */,
+				E22415BC27BF5F47008093C7 /* SpinnerViewController.swift in Sources */,
+				E21B9DD32736054C005A212D /* NodeTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E231CBD32717996800F41810 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E231CBDC2717996800F41810 /* Eorzea_TimersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E231CBDD2717996800F41810 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E231CBE82717996800F41810 /* Eorzea_TimersUITestsLaunchTests.swift in Sources */,
+				E231CBE62717996800F41810 /* Eorzea_TimersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E231CBD92717996800F41810 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E231CBBD2717996600F41810 /* Eorzea Timers */;
+			targetProxy = E231CBD82717996800F41810 /* PBXContainerItemProxy */;
+		};
+		E231CBE32717996800F41810 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E231CBBD2717996600F41810 /* Eorzea Timers */;
+			targetProxy = E231CBE22717996800F41810 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E231CBCF2717996700F41810 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E231CBD02717996700F41810 /* Base */,
+				E2C3978427A40C7000C9B416 /* fr */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E2C3978327A40C5C00C9B416 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2C3978227A40C5C00C9B416 /* en */,
+				E2C3978527A40C7000C9B416 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E231CBE92717996800F41810 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E231CBEA2717996800F41810 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E231CBEC2717996800F41810 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A2BE7167B16FFACD4DD078 /* Pods-Eorzea Timers.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 8825K9HH49;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Eorzea Timers/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.christopher-devito.Eorzea-Timers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E231CBED2717996800F41810 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2CBBBC0F82E34A860C1F7DD /* Pods-Eorzea Timers.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 8825K9HH49;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Eorzea Timers/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.christopher-devito.Eorzea-Timers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E231CBEF2717996800F41810 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CDCAF786C152C8273AC7688 /* Pods-Eorzea TimersTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.christopher-devito.Eorzea-TimersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eorzea Timers.app/Eorzea Timers";
+			};
+			name = Debug;
+		};
+		E231CBF02717996800F41810 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF6D46FA36C6FD10B9B8E113 /* Pods-Eorzea TimersTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.christopher-devito.Eorzea-TimersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eorzea Timers.app/Eorzea Timers";
+			};
+			name = Release;
+		};
+		E231CBF22717996800F41810 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A8987ACA1917D3A43D57760 /* Pods-Eorzea Timers-Eorzea TimersUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.christopher-devito.Eorzea-TimersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Eorzea Timers";
+			};
+			name = Debug;
+		};
+		E231CBF32717996800F41810 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16970730A5EE95BCBB87AF9C /* Pods-Eorzea Timers-Eorzea TimersUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.christopher-devito.Eorzea-TimersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Eorzea Timers";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E231CBB92717996600F41810 /* Build configuration list for PBXProject "Eorzea Timers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E231CBE92717996800F41810 /* Debug */,
+				E231CBEA2717996800F41810 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E231CBEB2717996800F41810 /* Build configuration list for PBXNativeTarget "Eorzea Timers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E231CBEC2717996800F41810 /* Debug */,
+				E231CBED2717996800F41810 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E231CBEE2717996800F41810 /* Build configuration list for PBXNativeTarget "Eorzea TimersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E231CBEF2717996800F41810 /* Debug */,
+				E231CBF02717996800F41810 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E231CBF12717996800F41810 /* Build configuration list for PBXNativeTarget "Eorzea TimersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E231CBF22717996800F41810 /* Debug */,
+				E231CBF32717996800F41810 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E231CBB62717996600F41810 /* Project object */;
+}
