@@ -15,7 +15,7 @@ class TargetGraphGeneratorTests: XCTestCase {
     static let kTestAppProject = try! Bundle.module.unitTestDirectoryPath(path: "TestApp/TestApp.xcodeproj")
     static let kCocoapodsWorkspace = try! Bundle.module.unitTestDirectoryPath(path: "CocoapodsExample/Eorzea Timers.xcworkspace")
 
-    func disable_testReactiveSwift() throws {
+    func testReactiveSwift() throws {
         let sut = try TargetGraphGenerator(project: Self.kReactiveSwiftProject)
         print(sut.generate())
         XCTAssertEqual(1, 1)
@@ -27,7 +27,7 @@ class TargetGraphGeneratorTests: XCTestCase {
         XCTAssertTrue(true)
     }
 
-    func testCocoapods() throws {
+    func disable_testCocoapods() throws {
         let sut = try TargetGraphGenerator(workspace: Self.kCocoapodsWorkspace)
         print(sut.generate())
         XCTAssertTrue(true)

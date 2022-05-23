@@ -56,7 +56,6 @@ extension XcodeProj {
                         targetNode = graph.add(node: targetNode)
                     }
                     target.buildPhases.forEach { buildPhase in
-                        print("Build Phase: \(productName) - \(buildPhase)")
                         if buildPhase.buildPhase == .frameworks {
                             buildPhase.files?.forEach { file in
                                 if var path = file.file?.path {
@@ -68,22 +67,23 @@ extension XcodeProj {
                                     if !graph.contains(node: node) {
                                         _ = graph.add(node: node)
                                     }
+                                    print("Frameworks Build Phase: \(targetNode.name) -> \(node.name)")
                                     graph.add(edge: Edge(from: targetNode, to: node))
                                 }
                             }
                         }
                     }
                     target.dependencies.forEach { dependency in
-                        guard let name = dependency.target?.productName else { print("No Name");return }
-                        print("Dependency: \(name)")
-                        if name.contains("Pods-Eorzea Timers") {
-                            print(dependency)
+                        guard let name = dependency.target?.productName else {
+                            print("No Name");
+                            return
                         }
                         let node = Node(name: name)
                         if !graph.contains(node: node) {
                             _ = graph.add(node: node)
                         }
                         graph.add(edge: Edge(from: targetNode, to: node))
+                        print("Dependency: \(targetNode.name) -> \(node.name)")
                     }
                 }
             }
